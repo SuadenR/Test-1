@@ -51,8 +51,14 @@ const pinkPrice = .55
 
 // CODE HERE
 
+var totalAcres = 0
 
+for (i = 0; i <= 6 ; i++){
+        totalAcres = totalAcres + ((fujiAcres[i] + galaAcres[i] + pinkAcres[i]))
+        console.log(totalAcres)
+}
 
+//I created a for loop that summed the arrays up into a variable called "totalAcres"
 
 
 // PROBLEM 2
@@ -69,8 +75,10 @@ const pinkPrice = .55
 
 // CODE HERE
 
+let averageDailyAcres = totalAcres / 7
+console.log(averageDailyAcres)
 
-
+//I set a variable for the averageDailyAcres and set it to the totalAcres divided by 7 (the amount of days) to find the amount of appels picked per day.
 
 
 // PROBLEM 3
@@ -107,6 +115,13 @@ let days = 0
 
 // CODE HERE
 
+while (acresLeft > 0) {
+    acresLeft = acresLeft * days - averageDailyAcres
+    i++;
+    console.log(acresLeft)
+}
+
+//I tried creating a while loop that checked to ensure the acresLeft were above 0 and then removed the averageDailyAcres from the acresLeft
 
 
 // PROBLEM 4
@@ -135,9 +150,9 @@ let days = 0
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
 
 
 
